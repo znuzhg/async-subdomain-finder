@@ -19,7 +19,7 @@ Hızlı, hafif ve pentest odaklı bir keşif aracıdır.
 
 ### 1) Depoyu klonla
 ```bash
-git clone https://github.com/<username>/async-subdomain-finder.git
+git clone https://github.com/znuzhg/async-subdomain-finder.git
 cd async-subdomain-finder
 ```
 2) Gerekli kütüphaneyi yükle
