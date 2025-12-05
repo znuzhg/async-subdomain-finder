@@ -67,8 +67,9 @@ asyncio.Semaphore ile aynı anda en fazla 100 istek gönderir
 HTTP durumu < 400 ise geçerli kabul edip çıktı ve dosya kaydı yapar
 
 Hataları sessizce geçer (isteğe göre açılabilir)
----
+
 🧩 Kod Mantığı (Özet)
+```bash
 sem = asyncio.Semaphore(100)
 write_lock = asyncio.Lock()
 
@@ -78,4 +79,4 @@ async def subDomain_kontrol(session, word):
             if response.status < 400:
                 async with write_lock:
                     # found.txt dosyasına yaz
----
+```
